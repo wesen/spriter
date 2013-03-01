@@ -20,7 +20,6 @@ if (file) {
     var input = fs.readFileSync(file, 'utf-8');
     var output = spriter(input, program.source || path.dirname(file), program.target, program.filter, program.optimization);
 
-    process.stdout.write(output);
 } else if (program.source) {
     var chunks = [];
 
